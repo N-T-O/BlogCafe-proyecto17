@@ -26,6 +26,7 @@ body{
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
+    b
 }  
 a{
     text-decoration: none;    
@@ -166,16 +167,20 @@ img{
     border: none;
     margin: 0; 
 }
-.widget-curso__label{
+.widget-curso__label,
+.curso__label{
     font-family: var(--fuenteHeading);
     font-weight: 700;
 }
-.widget-curso__info{
+.widget-curso__info,
+.curso__info{
     font-weight: normal;
 }
 
 .widget-curso__label,
-.widget-curso__info{
+.widget-curso__info,
+.curso__label,
+.curso__info{
     font-size: 2rem;
 }
 
@@ -186,7 +191,9 @@ img{
     
 }
 /* ######### Sobre Nosotros ######### */
-
+.sobre-nosotros__texto{
+    text-align: justify;
+}
 @media (min-width: 768px){
     .sobre-nosotros{
         display: flex;
@@ -201,4 +208,18 @@ img{
         
     }
 }
- 
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    
+}
+.curso:last-of-type{
+    border: none;
+}
